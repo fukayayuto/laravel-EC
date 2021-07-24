@@ -15,6 +15,8 @@ class CreatePrimaryCategoriesTable extends Migration
     {
         Schema::create('primary_categories', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->integer('sort_no');
             $table->timestamps();
         });
     }
